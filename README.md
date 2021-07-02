@@ -1,10 +1,12 @@
 # IP_Watcher.py #
 
-### A simple Python3 script to check the current IP address. If the IP address has changed it will send an E-mail with the new IP address. ###
+### A simple Python3 script to check the current IP address. If the IP address has changed since the last check it will send you an E-mail notifying you of the change and tell you the new IP address. ###
 
 ### Works on Windows, macOS, or Linux. ###
 
-This python3 script uses a Gmail account to notify you if IP address has changed. This can be useful when you don't have a static IP address but you still need to remotely access your machine. This can be setup to run as a crontab job on Linux and macOS, or as a task scheduler on Windows.  
+This python3 script uses a Gmail account (but can be configured to work with most any email service) to notify you if the IP address has changed. This can be useful when you don't have a static IP address (or Dynamic DNS) but you still need to maintain remote access your machine. This can be setup to run as a crontab job on Linux and macOS, or as a task scheduler on Windows.  
+
+To use this script download and save a copy to the machine and then edit the python script using the directions below:
 
 ### Open the IP_Watcher.py file in your favorite text editor of choice. ###
 
