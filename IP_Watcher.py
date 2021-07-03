@@ -9,10 +9,10 @@
 ######################################################
 
 from bs4 import BeautifulSoup
+from email.mime.text import MIMEText
 import urllib.request, urllib.error, urllib.parse
 import re
 import smtplib
-from email.mime.text import MIMEText
 
 logFile = '/var/log/IP_Watcher.log'
 
