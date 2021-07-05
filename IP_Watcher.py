@@ -35,14 +35,14 @@ if (ipaddress != prevIp):
     for recipient in ['<[EMAIL ADDRESS GOES HERE]>']:
         msg = MIMEText('The NEW IP Address of [MACHINE NAME GOES HERE] is: '+ipaddress)
         msg['Subject'] = 'The IP Address of [MACHINE NAME GOES HERE] has changed.'
-        msg['From'] = '<[EMAIL ADDRESS GOES HERE]>'
-        msg['To'] = '<[EMAIL ADDRES GOES HERE]>'
+        msg['From'] = '<[FROM EMAIL ADDRESS GOES HERE]>'
+        msg['To'] = '<[TO EMAIL ADDRESS GOES HERE]>'
 
         mailServer = smtplib.SMTP('smtp.gmail.com', 587)
         mailServer.ehlo()
         mailServer.starttls()
         mailServer.ehlo()
-        mailServer.login('[USERNAME]>','[PASSWORD]')
+        mailServer.login('[USERNAME OF FROM EMAIL ADDRESS]','[PASSWORD OF FROM EMAIL ADDRESS]')
         mailServer.sendmail(msg['From'], msg['To'], msg.as_string())
         mailServer.close()
 
