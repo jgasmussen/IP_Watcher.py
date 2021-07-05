@@ -16,7 +16,7 @@ import smtplib
 
 logFile = '/var/log/IP_Watcher.log'
 
-request = urllib.request.urlopen('http://icanhazip.com').read()
+request = urllib.request.urlopen('https://checkip.amazonaws.com').read()
 
 soup = BeautifulSoup(request, "html.parser")
 ipaddress = re.search('[0-9]+.[0-9]+.[0-9]+.[0-9]+', str(request)).group(0)
