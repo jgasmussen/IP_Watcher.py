@@ -5,7 +5,7 @@
 #----------------------------------------------------#
 #           Written by: John G. Asmussen             #
 #         EGA Technology Specialists, LLC.           #
-#                     (c) 2021                       #
+#                   GNU GPL v3.0                     #
 ######################################################
 
 from bs4 import BeautifulSoup
